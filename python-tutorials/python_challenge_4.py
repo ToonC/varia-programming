@@ -7,5 +7,7 @@ nothing = 12345
 
 with request.urlopen(uri.format(nothing)) as response:
    page = html.fromstring(response.read())
-   print(response.read())
+   
+   print(uri.format(nothing))
+   print(response)
    print(page)
